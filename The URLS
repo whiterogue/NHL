@@ -1,0 +1,34 @@
+I am scraping data on NHL games in the 2017-2018, 2018-2019, & 2019-2020 season using the BeautifulSoup package in Python.
+
+>import requests
+>import urllib.request
+>from bs4 import BeautifulSoup
+
+I'll also be using the following packages:
+re
+Pandas (and DataFrame)
+Numpy
+math
+matplotlib
+pylab
+
+>import re
+>import pandas as pd
+>import numpy as np
+>from pandas import DataFrame
+>import math
+>import matplotlib.pyplot as plt
+>import pylab as pl
+
+The url for the first official boxscore of a NHL game in the 2017-2018 season is as follows:
+
+http://www.nhl.com/scores/htmlreports/20172018/GS020001.HTM
+
+'20172018' denotes that this is the address for a game in the 2017-2018 season. Alternatively, '20182019' defines games in the 2018-2019
+season, and '20192020' defines games in the 2019-2020 season
+
+'GS020001' tells us we're looking at a url for the first game in the season.
+'GS020002' is the second game.
+'GS021224' is the 1224th game.
+
+There are 1271 games per season, but the 20192020 season is still in progress, so I only scraped
